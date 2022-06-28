@@ -1,9 +1,8 @@
-deploy:
- artifact: ./www/Archive.zip
-
 branch-defaults:
   default:
     environment: Udagram-env
+deploy:
+  artifact: ./www/Archive.zip
 environment-defaults:
   Udagram-env:
     branch: null
