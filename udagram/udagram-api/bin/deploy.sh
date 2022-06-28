@@ -1,5 +1,8 @@
+echo $EB_APP
+echo $EB_ENV
+
 
 cd www
 printenv > .env
-eb init --region us-east-1 udagram
-eb deploy Udagramapi-env
+eb init --region $AWS_REGION $EB_APP
+eb deploy $EB_ENV
