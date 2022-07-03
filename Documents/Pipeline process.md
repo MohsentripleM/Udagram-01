@@ -1,7 +1,7 @@
 # Pipeline process
 
 1. Pushing the code from local machine to [Github]((https://github.com/MohsentripleM/Udagram-01.git))
-2. Circleci trigger a new pipline starting from the main branch 
+2. Circleci trigger a new pipeline starting from the main branch 
 3. Preparing Variables 
 4. Checkout code
 5. Installing Node js
