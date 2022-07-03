@@ -1,3 +1,4 @@
+eb use $EB_ENV
 eb setenv PORT=$PORT            
 eb setenv URL=$URL
 eb setenv POSTGRES_USERNAME=$POSTGRES_USERNAME
@@ -14,5 +15,4 @@ eb setenv EB_ENV=$EB_ENV
 eb setenv S3_BUCKET=$S3_BUCKET 
 eb setenv AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID
 eb setenv AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY
-eb use $EB_ENV
 eb deploy
