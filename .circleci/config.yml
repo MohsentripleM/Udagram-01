@@ -9,10 +9,11 @@ jobs:
   build:
     docker:
       # the base image can run most needed actions with orbs
-      - image: "cimg/node:12.13.0"
+      - image: "cimg/node:14.15"
     steps:       
-      - checkout
-      - node/install
+     # install node and checkout code
+      - node/install:
+          node-version: '14.15'         
       - eb/setup
       - aws-cli/setup
 
@@ -59,3 +60,6 @@ workflows:
   main:
     jobs:
       - build
+Branches:
+  only: 
+     -  main
